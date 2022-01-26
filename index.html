@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="links">
+        <a href="https://github.com/AndreiMorosanC"><img src="https://e7.pngegg.com/pngimages/914/758/png-clipart-computer-icons-logo-github-github-logo-logo-computer-program.png" alt="" id="img" class="img2"></a>
+        <a href="https://www.linkedin.com/in/andrei-morosan-3463a6159/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png"  class="img2" id="linkedin"></a>
+    </div>
+
+    <div id="line"></div>
+    <nav>
+        
+        <ul class="column">
+                <li><a href="#head">home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">contact </a></li>
+                
+        </ul>
+        <hr>
+    </nav>
+    
+    <div id="head">
+        <H1>Andrei Morosan</H1>
+        <h3>frontend developer</h2>
+    </div>
+    <div id="about">
+        <h1>About Me</h1>
+        <p>I am a fronted developer with experience in html, csss and javascript.
+           I am currently working as a freelancer and in my free time learning new technologies</p>
+    </div>
+    <div id="projects">
+        <p >PROJECTS</p>
+        <div class="Title">
+        <h2 >Things to do</h2>
+        <h2 id="RPS">Rock Paper Scissors</h2>
+        </div>
+        <div id="lineup">
+            
+            <div  class="lineone"><a href="proyects/things to do/index.html"><img src="proyects/things to do/image/Captura.PNG" alt="" id="thingstodo"></a>
+            <button>VIEW CODE</button></div>
+            <div  class="lineone"><a href="proyects/rock-paper-scissors/piedra-papel-tijera/index.html"> <img src="proyects/rock-paper-scissors/piedra-papel-tijera/image/rock-paper-scissors.PNG" alt="" id="gameRPS"></a>
+            <button>VIEW CODE</button></div>
+            <div  class="lineone"></div>
+        </div>
+    </div>
+    
+    <div   id="contact">
+        <h1>CONTACT</h1>
+        <div id="box">
+            <form action="https://formsubmit.co/andreimorosan39@gmail.com" method="POST">
+            <div class="Red" >Name
+                <input type="text" id="input1" class="txtinput" name="name" required>
+            </div>
+            <div class="Red" id="email" >Email
+                <input type="email" id="input2" class="txtinput" name="email" required>
+            </div>
+            <div class="Red" id="subject">Subject
+                <input type="text" id="input3" class="txtinput" name="subject" required>
+            </div>
+            <div class="Red" id="message"> Message
+                <textarea type="text" id="input4" class="txtinput" name="message" rows="4" cols="20" required ></textarea>
+            </div>
+            <div>
+            <button type="submit" id="btn"><p id="send">SEND</p</button>
+            
+            </div>
+            </form>
+            <div class="space"  ></div>
+        </div>
+        
+    </div>
+
+
+
+</body>
+<script src="script.js"></script>
+</html>
