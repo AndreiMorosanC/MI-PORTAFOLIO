@@ -1,3 +1,420 @@
+@media  screen and (min-width:375px) {
+    
+
+*{
+    font-family: 'Oswald', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: rgb(55, 60, 75);
+}
+
+
+nav{
+    
+    justify-content: space-around;
+    align-items: center;
+    min-height: 3vh;
+    position: fixed;
+    z-index: 3;
+
+    
+}
+nav hr{
+    
+    height: 1px;
+    width: 83vw;
+    position: absolute;
+    top: 8vh;
+    left: 34vw;
+    border-color: rgb(212, 119, 119);
+}
+
+#head {
+   
+   position: absolute;
+   top: 25vh;
+   left: 5vh;
+   font-size: 7vw;
+   color: rgb(226, 226, 226);
+   text-transform: uppercase;
+   height: 1vh;
+   width: 100vw;
+   animation-fill-mode: forwards;
+   animation-name: head;
+   animation: head 6s;
+   
+}
+
+@keyframes head{
+    0%{
+        position: absolute;
+        left: -50vw;
+        top: 25vh;
+    }
+    100%{
+        position: absolute;
+        left: 5vh;
+        border: 0px;
+        top: 25vh;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+#head h3{
+    padding-left:4vw ;
+    color: rgb(212, 119, 119);
+    animation-fill-mode: forwards;
+    animation-name: headh3;
+    animation: headh3 6s;
+    animation-delay: 1s;
+    
+}
+
+@keyframes headh3{
+    0%{
+        position: absolute;
+        left: -50vw;
+    }
+    100%{
+        position: absolute;
+        left: 0vw;
+        
+    }
+}
+.column{
+    display:flex;
+    font-size: 3vh;
+    justify-content: space-around;
+    width: 30%;
+    position: fixed;
+    left: 57vw;
+    text-transform: uppercase;
+    padding-top: 25px;
+    padding-right: 5px;
+    background-color: transparent;
+    
+}
+
+.column li{
+    background-color: transparent;
+    list-style: none;
+    padding-right:5vw;
+    padding-left:5vw;
+}
+.column a{
+    background-color: transparent;
+    color: rgb(226, 226, 226);
+    letter-spacing: 2px;
+    text-decoration: none;
+    
+    
+}
+#about{
+    position: relative;
+    top: 60vh;
+    left: 60vw;
+    width: 50vw;
+    height: 1vh;
+    animation-fill-mode: forwards;
+    animation-name:about;
+    animation: about 6s;
+}
+@keyframes about{
+    0%{
+        position: absolute;
+        left: 120vw;
+        top: 60vh;
+    }
+    100%{
+        position:absolute;
+        left: 60vw;
+        top: 60vh;
+        border: 0px;
+        margin: 0px;
+    }
+}
+#about h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(226, 226, 226);
+    font-size: 7vh;
+}
+#about p{
+    color: rgb(212, 119, 119);
+    font-size: 4vw;
+}
+#projects{
+    width: 1vw;
+    color:rgb(226, 226, 226);
+    position: absolute;
+    top: 127vh;
+    left: 5vw;
+}
+#projects p{
+    font-size: 15vh;
+}
+
+#contact{
+    width: 2vw;
+    font-size: 8vh;
+    color: rgb(226, 226, 226);
+    position: absolute;
+    top: 240vh;
+    left: 5vw;
+    
+}
+#contact h1{
+    
+    position: absolute;
+    left: 0vw;
+}
+.Red{
+    
+    font-size: 2.5vw;
+    color:rgb(212, 119, 119) ;
+    
+
+}
+
+#box{
+    
+    
+    width: 100vw;
+    height: 40vh;
+    position: absolute;
+    top: 30vh;
+    left: 5vw;
+    
+}
+
+#input1{
+    position: absolute;
+    top: 7vh;
+    left: 0vw;
+    width: 55vw;
+    background-color: white;
+    border: 0px;
+    padding-top: 10px;
+    z-index: 5;
+}
+#input2{
+    position: absolute;
+    top: 7vh;
+    left: 20vw;
+    width: 55vw;
+    background-color: white;
+    border: 0px;
+    padding-top: 10px;
+    z-index: 5;
+    
+}
+#emailN{
+    position: absolute;
+    top:-1vh;
+    left: 38vw;
+    font-size: 10vw;
+}
+#nameN{
+    position: absolute;
+    top:-1vh;
+    left: 18vw;
+    font-size: 10vw;
+}
+#subjectN{
+    position: absolute;
+    top:2vh;
+    left: 32vw;
+    font-size: 10vw;
+}
+#messeageN{
+    position: absolute;
+    top:4vh;
+    left: 42vw;
+    font-size: 10vw;
+}
+#email{
+    position: absolute;
+    top: 0vh;
+    left: 40vw;
+   
+}
+#input3{
+    position: absolute;
+    top: 10vh;
+    left: -12vw;
+    width: 115vw;
+    background-color: white;
+    border: 0px;
+    padding-top: 10px;
+    z-index: 4;
+}
+#subject{
+    position: absolute;
+    top: 11vh;
+    left: 12vw;
+}
+#input4{
+    position: absolute;
+    top: 12vh;
+    left: 0vw;
+    width: 115vw;
+    height: 20vh;
+    background-color: white;
+    border: 0px;
+    
+    z-index: 3;
+    
+}
+#message{
+    position: absolute;
+    top: 23vh;
+    left: 0vw;
+    
+}
+
+.txtinput{
+font-size: 20px;
+}
+
+#btn{
+    position: absolute;
+    top: 58vh;
+    width: 115vw;
+    height: 10vh;
+    background-color: rgb(212, 119, 119);
+    
+}
+#send{
+    position: absolute;
+    height: 0px;
+    left: 48vw;
+    top:-1vh;
+    font-size: 10vw;
+    color: rgb(226, 226, 226);
+    background-color: transparent;
+}
+
+.space{
+    width: 60vw;
+    height: 40vh;
+    position: absolute;
+    top: 70vh;
+}
+#img{
+    
+    filter:brightness(1.5);
+    mix-blend-mode: multiply;
+    height: 6vh;
+    
+}
+.img2{
+    display: block;
+    margin-bottom: 10px;
+
+}
+#links {
+    position: fixed;
+    top: 95vh;
+    left: 125vw;
+    z-index: 5;
+    animation-fill-mode: forwards;
+    animation-name: link;
+    animation: link 10s;
+    
+
+}
+@keyframes link{
+    0%
+    {
+        position: fixed;
+        top: 95vh;
+        left:150vw;
+        
+    }
+    100%{
+        position: fixed;
+        top: 95vh;
+        left: 125vw;
+        
+    }
+}
+
+#linkedin{
+    height: 4vh;
+    padding-left: 0px;
+    margin: 0px;
+    position: absolute;
+    left: 4.9vw;
+}
+.Title{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-left: 17vw;
+    
+    width: 30vw;
+    font-size: 2vh;
+    color: rgb(212, 119, 119);
+    
+}
+.Title h2{
+    position: relative;
+}
+#RPS{
+    position: absolute;
+    left: 7vw;
+    width: 40vw;
+}
+#lineup{
+    position: absolute;
+    top: 30vh;
+    left: -7vw;
+    width: 70vw;
+    display: flex;
+    flex-direction:row;
+}
+.lineone{
+    position: relative;
+    margin-left:20px ;
+}
+
+#lineup button{
+    width: 100%;
+    height: 4vh;
+    background-color:rgb(226, 226, 226) ;
+    border: 0px;
+
+    text-align: center;
+    color: rgb(212, 119, 119);
+}
+
+#lineup button:active{
+    background-color:rgba(194, 108, 108, 0.651) ;
+}
+
+#gameRPS{
+    width: 60vw;
+    height: 40vh;
+
+}
+#thingstodo{
+    width: 70vw;
+    height: 40vh;
+}
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 992px) {
+    
+
 *{
     font-family: 'Oswald', sans-serif;
     margin: 0px;
@@ -368,4 +785,5 @@ font-size: 20px;
 #thingstodo{
     width: 40vw;
     height: 40vh;
+}
 }
