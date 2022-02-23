@@ -1,4 +1,4 @@
-@media  screen and (min-width:375px) {
+/*@media  screen and (min-width:375px) { !!!!workin in this!!!! 
     
 
 *{
@@ -405,14 +405,14 @@ font-size: 20px;
 }
 
 
+*/
 
 
 
 
 
 
-
-@media screen and (min-width: 992px) {
+@media all and (min-width: 992px) {
     
 
 *{
@@ -746,10 +746,11 @@ font-size: 20px;
 }
 .Title h2{
     position: relative;
+    left: -5vw;
 }
 #RPS{
     position: absolute;
-    left: 38vw;
+    left: 24vw;
     width: 30vw;
 }
 #lineup{
@@ -778,12 +779,17 @@ font-size: 20px;
 }
 
 #gameRPS{
-    width: 40vw;
-    height: 40vh;
+    width: 30vw;
+    height: 30vh;
 
 }
 #thingstodo{
-    width: 40vw;
-    height: 40vh;
+    width: 30vw;
+    height: 30vh;
 }
+}
+
+#menu{
+    position: relative;
+    left: 40vw;
 }
