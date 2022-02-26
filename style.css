@@ -4,28 +4,19 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+body{
     background-color: rgb(55, 60, 75);
 }
 
-
 nav{
-    
-    justify-content: space-around;
-    align-items: center;
-    min-height: 2vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
     position: fixed;
-    z-index: 3;
-
-    
-}
-nav hr{
-    
-    height: 1px;
-    width: 38vw;
-    position: absolute;
-    top: 8vh;
-    left: 53vw;
-    border-color: rgb(212, 119, 119);
+    padding: 10px 0;
+    z-index: 8;
 }
 
 #head {
@@ -80,33 +71,27 @@ nav hr{
         
     }
 }
+.menu{
+    background: rgba(55, 60, 75, 0.678);
+}
 .column{
     display:flex;
-    font-size: 3vh;
-    justify-content: space-around;
-    width: 30%;
-    position: fixed;
-    left: 57vw;
     text-transform: uppercase;
-    padding-top: 25px;
-    padding-right: 5px;
-    background-color: transparent;
-    
+    font-size: 30px;
 }
 
-.column li{
-    background-color: transparent;
-    list-style: none;
-    padding-right:5vw;
-    padding-left:5vw;
-}
 .column a{
     background-color: transparent;
     color: rgb(226, 226, 226);
     letter-spacing: 2px;
     text-decoration: none;
-    
-    
+    margin: 0 30px;
+}
+.hr{
+    height: 5px;
+    width: 75%;
+    margin: 10px auto 0 auto;
+    background: rgb(212, 119, 119);
 }
 #about{
     position: relative;
