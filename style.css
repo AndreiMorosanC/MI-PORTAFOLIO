@@ -1,4 +1,4 @@
-
+/* ! GENERAL STYLES */
 *{
     font-family: 'Oswald', sans-serif;
     margin: 0px;
@@ -24,6 +24,57 @@ nav{
     flex-direction: column;
     position: relative;
 }
+
+/* ! HEADBAR */
+.menu{
+    background: rgba(55, 60, 75, 0.678);
+}
+.menu a{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: rgb(226, 226, 226);
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin: 0 30px;
+}
+
+.hr{
+    height: 5px;
+    width: 75%;
+    margin: 10px auto 0 auto;
+    background: rgb(212, 119, 119);
+}
+/* ! LINKS */
+.social-icon{
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.308);
+}
+.social-icon:hover{
+    opacity: 0.5;
+}
+#links {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    top: 80vh;
+    z-index: 5;
+    animation-fill-mode: forwards;
+    animation-name: link;
+    animation: link 5s;
+
+}
+@keyframes link{
+    0%
+    {
+        right: -200px;
+    }
+    100%{
+        right: 0;
+    }
+}
+
+/* ! HOME PAGE */
 #home{
     height: 100vh;
 }
@@ -66,28 +117,7 @@ nav{
         left: 0vw;
     }
 }
-.menu{
-    background: rgba(55, 60, 75, 0.678);
-}
-.column{
-    display:flex;
-    text-transform: uppercase;
-    font-size: 30px;
-}
 
-.column a{
-    background-color: transparent;
-    color: rgb(226, 226, 226);
-    letter-spacing: 2px;
-    text-decoration: none;
-    margin: 0 30px;
-}
-.hr{
-    height: 5px;
-    width: 75%;
-    margin: 10px auto 0 auto;
-    background: rgb(212, 119, 119);
-}
 #intro-about{
     position: relative;
     top: 49vh;
@@ -119,9 +149,15 @@ nav{
 }
 #intro-about p{
     color: rgb(212, 119, 119);
-    font-size: 1vw;
+    font-size: 25px;
+}
+@media (max-width: 768px) {
+    #intro-about p{
+    font-size: 18px;
+    }
 }
 
+/* !   CONTACT PAGE */
 #contact{
     font-size: 8vh;
     color: rgb(226, 226, 226);
@@ -139,6 +175,7 @@ nav{
 #contact-box{
     width: 33%;
     max-width: 600px;
+    min-width: 350px;
     align-self: center;
     margin-bottom: 200px;
 }
@@ -179,49 +216,7 @@ form{
 }
 
 
-.space{
-    height: 40vh;
-}
-.social-icon{
-    width: 50px;
-}
-#links {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    top: 80vh;
-    z-index: 5;
-    animation-fill-mode: forwards;
-    animation-name: link;
-    animation: link 5s;
-
-}
-@keyframes link{
-    0%
-    {
-        right: -200px;
-    }
-    100%{
-        right: 0;
-    }
-}
-
-.Title{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    margin-left: 17vw;
-    
-    width: 30vw;
-    font-size: 2vh;
-    color: rgb(212, 119, 119);
-    
-}
-.Title h2{
-    position: relative;
-    left: -5vw;
-}
+/* ! PROJECTS PAGE */
 #projects{
     color:rgb(226, 226, 226);
 
@@ -240,23 +235,29 @@ form{
     width: 30%;
     margin-right: 3%;
 }
+.project-single h2{
+    text-align: center;
+    margin: 10px 0;
+    color: rgb(212, 119, 119);
+}
 .project-single img{
     width: 100%;
 }
-
-#lineup button:active{
+.project-single button{
+    width: 100%;
+    height: 40px;
+    color: rgb(212, 119, 119);
+}
+.project-single button:active{
     background-color:rgba(194, 108, 108, 0.651) ;
 }
-#menu{
-    position: relative;
-    left: 40vw;
-}
+
 @media (max-width: 768px) {
-  .projects-container{
-      flex-direction: column;
-  }
-  .project-single{
+    .projects-container{
+        flex-direction: column;
+    }
+   .project-single{
     width: 100%;
     margin: 0;
-}
+    }
 }
