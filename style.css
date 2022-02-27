@@ -259,19 +259,16 @@ font-size: 20px;
     z-index: 5;
     animation-fill-mode: forwards;
     animation-name: link;
-    animation: link 10s;
+    animation: link 5s;
 
 }
 @keyframes link{
     0%
     {
-        position: absolute;
-        top: 80vh;
-        left:120vw;
+        right: -200px;
     }
     100%{
-        position: absolute;
-        align-self: flex-end;
+        right: 0;
     }
 }
 
