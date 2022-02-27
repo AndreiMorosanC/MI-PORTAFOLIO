@@ -20,10 +20,12 @@ nav{
     z-index: 8;
 }
 .page{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
+}
+#home{
+    height: 100vh;
 }
 .intro-title {
    top: 15vh;
@@ -126,16 +128,19 @@ nav{
 }
 #contact h1{
     align-self: center;
+    margin-bottom: 50px;
 }
 .Red{
     width: 100%;
-    font-size: 2.5vw;
+    font-size:28px;
     color:rgb(212, 119, 119) ;
 }
 
 #contact-box{
-    width: 33vw;
+    width: 33%;
+    max-width: 600px;
     align-self: center;
+    margin-bottom: 200px;
 }
 form{
     display: flex;
@@ -151,6 +156,7 @@ form{
 .txtinput{
     width: 100%;
     font-size: 20px;
+    margin: 10px 0;
     background-color: white;
     padding-top: 10px;
     border: none;
@@ -220,8 +226,10 @@ form{
     color:rgb(226, 226, 226);
 
 }
-#projects p{
+#projects h1{
     font-size: 15vh;
+    margin-left: 5%;
+    margin-bottom: 50px;
 }
 .projects-container{
     width: 90%;
@@ -230,7 +238,7 @@ form{
 }
 .project-single{
     width: 30%;
-    margin-left: 3%;
+    margin-right: 3%;
 }
 .project-single img{
     width: 100%;
