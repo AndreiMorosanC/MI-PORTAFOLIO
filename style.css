@@ -21,6 +21,9 @@ nav{
 }
 .page{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 .intro-title {
    top: 15vh;
@@ -116,136 +119,55 @@ nav{
     color: rgb(212, 119, 119);
     font-size: 1vw;
 }
-#projects{
-    width: 1vw;
-    color:rgb(226, 226, 226);
-    position: absolute;
-    top: 110vh;
-    left: 5vw;
-}
-#projects p{
-    font-size: 15vh;
-}
 
 #contact{
-    width: 2vw;
     font-size: 8vh;
     color: rgb(226, 226, 226);
-    position: absolute;
-    top: 240vh;
-    left: 5vw;
-    
 }
 #contact h1{
-    
-    position: absolute;
-    left: 30vw;
+    align-self: center;
 }
 .Red{
-    
+    width: 100%;
     font-size: 2.5vw;
     color:rgb(212, 119, 119) ;
-    
-
 }
 
-#box{
-    
-    
+#contact-box{
     width: 33vw;
-    height: 40vh;
-    position: absolute;
-    top: 30vh;
-    left: 27vw;
-    
+    align-self: center;
 }
-
-#input1{
-    position: absolute;
-    top: 7vh;
-    left: 0vw;
-    width: 40%;
+.name-email{
+    display: flex;
+    justify-content: space-between;
+}
+.name-email .Red{
+    width: 45%;
+}
+.txtinput{
+    width: 100%;
+    font-size: 20px;
     background-color: white;
-    border: 0px;
     padding-top: 10px;
+    border: none;
     z-index: 5;
-}
-#input2{
-    position: absolute;
-    top: 7vh;
-    left: -5.1vw;
-    width: 15vw;
-    background-color: white;
-    border: 0px;
-    padding-top: 10px;
-    z-index: 5;
-    
-}
-#email{
-    position: absolute;
-    top: 0vh;
-    left: 23vw;
-}
-#input3{
-    position: absolute;
-    top: 8vh;
-    left: -12vw;
-    width: 32.9vw;
-    background-color: white;
-    border: 0px;
-    padding-top: 10px;
-    z-index: 4;
-}
-#subject{
-    position: absolute;
-    top: 11vh;
-    left: 12vw;
 }
 #input4{
-    position: absolute;
-    top: 8vh;
-    left: 0vw;
-    width: 32.9vw;
     height: 20vh;
-    background-color: white;
-    border: 0px;
-    
-    z-index: 3;
-    
-}
-#message{
-    position: absolute;
-    top: 23vh;
-    left: 0vw;
-    
-}
-
-.txtinput{
-font-size: 20px;
 }
 
 #btn{
-    position: absolute;
-    top: 55vh;
-    width: 33vw;
+    width: 50%;
+    margin: auto;
     height: 5vh;
     background-color: rgb(212, 119, 119);
-    
-}
-#send{
-    position: absolute;
-    height: 0px;
-    left: 14vw;
-    top:-1vh;
-    font-size: 2vw;
     color: rgb(226, 226, 226);
+    font-size: 28px;
 }
 
+
 .space{
-    width: 60vw;
     height: 40vh;
-    position: absolute;
-    top: 61vh;
 }
 .social-icon{
     width: 50px;
@@ -287,48 +209,41 @@ font-size: 20px;
     position: relative;
     left: -5vw;
 }
-#RPS{
-    position: absolute;
-    left: 24vw;
-    width: 30vw;
+#projects{
+    color:rgb(226, 226, 226);
+
 }
-#lineup{
-    position: absolute;
-    top: 30vh;
+#projects p{
+    font-size: 15vh;
+}
+.projects-container{
+    width: 90%;
     display: flex;
-    flex-direction:row;
+    align-self: center;
 }
-.lineone{
-    position: relative;
-    margin-left:20px ;
+.project-single{
+    width: 30%;
+    margin-left: 3%;
 }
-
-#lineup button{
+.project-single img{
     width: 100%;
-    height: 4vh;
-    background-color:rgb(226, 226, 226) ;
-    border: 0px;
-
-    text-align: center;
-    color: rgb(212, 119, 119);
 }
 
 #lineup button:active{
     background-color:rgba(194, 108, 108, 0.651) ;
 }
 
-#gameRPS{
-    width: 30vw;
-    height: 30vh;
-
-}
-#thingstodo{
-    width: 30vw;
-    height: 30vh;
-}
-
 
 #menu{
     position: relative;
     left: 40vw;
+}
+@media (max-width: 768px) {
+  .projects-container{
+      flex-direction: column;
+  }
+  .project-single{
+    width: 100%;
+    margin: 0;
+}
 }
