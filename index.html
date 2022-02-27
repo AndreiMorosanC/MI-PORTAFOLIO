@@ -12,60 +12,81 @@
 </head>
 <body>
     <div id="links">
-        <a href="https://github.com/AndreiMorosanC"><img src="https://e7.pngegg.com/pngimages/914/758/png-clipart-computer-icons-logo-github-github-logo-logo-computer-program.png" alt="" id="img" class="img2"></a>
-        <a href="https://www.linkedin.com/in/andrei-morosan-3463a6159/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png"  class="img2" id="linkedin"></a>
+        <a href="https://github.com/AndreiMorosanC"><img src="src/github-icon.png" alt="" class="social-icon"></a>
+        <a href="https://www.linkedin.com/in/andrei-morosan-3463a6159/"><img src="src/linkedin.png"  class="social-icon"></a>
     </div>
 
     <div id="line"></div>
     <nav>
-        
-        <ul class="column">
-                <li><a href="#head">home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">contact </a></li>
-                
-        </ul>
-        <hr>
+        <div class="menu">
+            <div>
+            <a href="#home">home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">contact </a>
+        </div>
+        <div class="hr"></div>
+        </div>
     </nav>
     
-    <div id="head">
-        <H1>Andrei Morosan</H1>
-        <h3>frontend developer</h2>
-    </div>
-    <div id="about">
+    <div id="home" class="page">
+        <div class="intro-title">
+            <h1>Andrei Morosan</h1>
+            <h3>frontend developer</h3>
+        </div>
+    <div id="intro-about">
         <h1>About Me</h1>
         <p>I am a fronted developer with experience in html, csss and javascript.
            I am currently working as a freelancer and in my free time learning new technologies</p>
     </div>
-    <div id="projects">
-        <p >PROJECTS</p>
-        <div class="Title">
-        <h2 >Things to do</h2>
-        <h2 id="RPS">Rock Paper Scissors</h2>
-        <h2 id="menu">Menu Restaurant</h2>
-        </div>
-        <div id="lineup">
-            <div  class="lineone"><a href="proyects/things to do/index.html"><img src="proyects/things to do/image/Captura.PNG" alt="" id="thingstodo"></a>
-            <button>VIEW CODE</button></div>
-            <div  class="lineone"><a href="proyects/rock-paper-scissors/piedra-papel-tijera/index.html"> <img src="proyects/rock-paper-scissors/piedra-papel-tijera/image/rock-paper-scissors.PNG" alt="" id="gameRPS"></a>
-            <a href="https://github.com/AndreiMorosanC/MI-PORTAFOLIO/tree/main/proyects/rock-paper-scissors/piedra-papel-tijera" target="_blank" rel="noopener noreferrer"><button>VIEW CODE</button></a></div>
-            <div class="lineone"><a href="/proyects/restaurantmenu-mobile/index.html " ><img src="/proyects/restaurantmenu-mobile/image/app-menu-restaurante.PNG" alt=""><button>VIEW CODE</button></a></div>
-            <div  class="lineone"></div>
+</div>
+    <div id="projects" class="page">
+        <h1>PROJECTS</h1>
+        <div class="projects-container">
+            <div class="project-single">
+                <h2 >Things to do</h2>
+                <div  class="img-box">
+                    <a href="proyects/things to do/index.html">
+                        <img src="proyects/things to do/image/Captura.PNG" >
+                    </a>
+                <button>VIEW CODE</button>
+                </div>
+            </div>
+            <div class="project-single">
+                <h2 >Rock Paper Scissors</h2>
+                <div  class="img-box">
+                    <a href="proyects/rock-paper-scissors/piedra-papel-tijera/index.html"> 
+                        <img src="proyects/rock-paper-scissors/piedra-papel-tijera/image/rock-paper-scissors.PNG" >
+                    </a>
+                    </div>
+                    <button>VIEW CODE</button>
+            </div>
+            <div class="project-single">
+                <h2 >Menu Restaurant</h2>
+                <div class="img-box">
+                    <a href="/proyects/restaurantmenu-mobile/index.html " >
+                        <img src="/proyects/restaurantmenu-mobile/image/app-menu-restaurante.PNG" alt="">
+                        <button>VIEW CODE</button>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-    
-    <div   id="contact">
+        
+    <div id="contact" class="page">
         <h1>CONTACT</h1>
-        <div id="box">
+        <div id="contact-box">
             <form action="https://formsubmit.co/andreimorosan39@gmail.com" method="POST">
-            <div class="Red" >
-                <h3 id="nameN">Name</h3>
-                <input type="text" id="input1" class="txtinput" name="name" required>
+            <div class="name-email">
+                <div class="Red" >
+                    <h3 id="nameN">Name</h3>
+                    <input type="text" id="input1" class="txtinput" name="name" required>
+                </div>
+                <div class="Red" id="email" >
+                    <h3 id="emailN">Email</h3>
+                    <input type="email" id="input2" class="txtinput" name="email" required>
+                </div>
             </div>
-            <div class="Red" id="email" >
-                <h3 id="emailN">Email</h3>
-                <input type="email" id="input2" class="txtinput" name="email" required>
-            </div>
+            
             <div class="Red" id="subject">
                 <h3 id="subjectN">Subject</h3>
                 <input type="text" id="input3" class="txtinput" name="subject" required>
@@ -74,12 +95,9 @@
                 <h3 id="messeageN">Message</h3>
                 <textarea type="text" id="input4" class="txtinput" name="message" rows="4" cols="20" required ></textarea>
             </div>
-            <div>
-            <button type="submit" id="btn"><p id="send">SEND</p</button>
-            
-            </div>
+
+            <button type="submit" id="btn">SEND</button>
             </form>
-            <div class="space"  ></div>
         </div>
         
     </div>
